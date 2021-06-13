@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW | bootstrap_layout</title>
+
+    <!-- 1. link bootstrap.css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            /* background-color: #eee; */
+            color: #fff;
+            background: linear-gradient(#000 0%, #666 15%, #666 85%, #000 100%);
+        }
+
+        /* .wrap {
+            background: linear-gradient(#000 0%, #666 15%, #666 85%, #000 100%);
+        } */
+
+        .menuUl {
+            list-style: none;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            margin-right: .5rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap h-100">
+        <div class="container-fluid h-100 d-flex justify-content-between">
+            <div class="row d-flex flex-row justify-content-around align-items-center">
+                <header
+                    class="col-sm-10 d-flex flex-column justify-content-center align-self-baseline flex-md-row justify-content-md-between text-center">
+                    <div class="logo">LOGO</div>
+                    <div class="menu mx-auto mx-md-1 mt-md-1">
+                        <ul class="menuUl d-flex p-0">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <div
+                    class="col-10 d-flex flex-column justify-content-center align-items-center col-md-8 flex-md-row justify-content-md-center align-items-md-center">
+                    <div class="content text-center">
+                        <div class="logoImg d-block mx-auto mb-3">
+                            <img class="rounded-circle align-self-center" src="https://picsum.photos/200/200/?random=1">
+                        </div>
+                        <h1 class="text-center mb-3">Bootstrap Layout</h1>
+                        <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corrupti
+                            aperiam ea amet
+                            dicta
+                            cumque sequi quasi debitis autem, quis maxime maiores totam cum quos sit, facilis doloremque
+                            iure! Nulla?</p>
+                        <button type="button" class="btn btn-light btn-lg text-center mb-5">Learn More</button>
+                    </div>
+                </div>
+
+
+                <div class="col-10 col-md-10 align-item-md-center mb-0">
+                    <footer class=" footerInfo text-center">Design by YunnDian
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 順序要對，要先有 jQuery，再有 popper.js、bootstrap.js -->
+        <!-- 3. src jquery -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <!-- 2. src bootstrap.bundle.min.js 包含 bootstrap.js、popper.js -->
+        <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
